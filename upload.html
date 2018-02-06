@@ -1,0 +1,31 @@
+<html>
+<head>
+	<TITLE> Post Content </title>
+	<style> body{ background-color:orange; text-align:center}	</style>
+</head>
+<body>
+
+	<form  method="post" action="upload.php">
+		<h1>Add Content:</h1>
+		<br>
+		<label>Content Name: </label>
+		<input placeholder="Content Name" name="insertContentName" type="text" required>
+		<br>
+		<textarea name = "insertContent" placeholder="Enter your message here" cols = "50" rows = "5" required></textarea>
+		<br>
+		<br>
+		<label>Visibility: </label>
+		<input placeholder="Type public or private" name="insertPublic" type="text" required>
+		<br>
+		<label>Share with FriendGroup: </label>
+		<input placeholder="FriendGroup" name="insertFriendGroup" type="text" />
+		<br>
+		<label> <b>Note:</b> FriendGroup not required if visibility is public </label>
+		<br>
+		<br>
+		<input type="submit" value="Post">
+	</form>
+	<hr />
+	<a href='viewInfo.php'>Go Home</a>
+</body>
+</html>
